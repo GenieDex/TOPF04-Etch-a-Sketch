@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Etch-a-Sketch!</h1>
+    <div id="main">
+        <div id="options">
+            <button id="clear">Clear</button>
+            <button id="rainbowMode">Rainbow mode</button>
+            <div class="tileNumSlider">
+                <h3 class="menuItem">Canvas size</h3>
+                <input type="range" min="2" max="16" value="4" class="slider" id="tileNum">
+            </div>
+            <div class="colorPicker">
+                <h3 class="menuItem">Color</h3>
+                <input type="color" id="currentColor" value="#000000">
+            </div> 
+        </div>
+        <div id="drawingArea">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>updateGrid()</script>
+</body>
+</html>
