@@ -11,7 +11,10 @@
     <div id="main">
         <div id="options">
             <button id="clear">Clear</button>
-            <button id="rainbowMode">Rainbow mode</button>
+            <div>
+                <h3 class="menuItem">Rainbow mode</h3>
+                <input id="rainbowMode" type="checkbox"/>
+            </div>
             <div class="tileNumSlider">
                 <h3 class="menuItem">Canvas size</h3>
                 <input type="range" min="2" max="16" value="4" class="slider" id="tileNum">
@@ -20,6 +23,10 @@
                 <h3 class="menuItem">Color</h3>
                 <input type="color" id="currentColor" value="#000000">
             </div> 
+            <div>
+                <h3 class="menuItem">Eraser</h3>
+                <input id="eraser" type="checkbox"/>
+            </div>
         </div>
         <div id="drawingArea">
         </div>
